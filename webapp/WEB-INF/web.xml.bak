@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>gescli-webs</display-name>
+  <welcome-file-list>
+    <welcome-file>vues/index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Pour le traitement du Hello</description>
+    <display-name>HelloServlet</display-name>
+    <servlet-name>HelloServlet</servlet-name>
+    <servlet-class>eu.m2i.formation.gesta.controlleur.HelloServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloServlet</servlet-name>
+    <url-pattern>/vues/helloAction</url-pattern>
+  </servlet-mapping>
+</web-app>
